@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Евдокия Завалий - Дети-герои Ленинграда</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="index.html" class="tab">Главная</a>
+        <a href="yura_bulatov.html" class="tab">Юра Булатов</a>
+        <a href="misha_tikhomirov.html" class="tab">Миша Тихомиров</a>
+        <a href="tanya_savicheva.html" class="tab">Таня Савичева</a>
+        <a href="vanya_solovyev.html" class="tab">Ваня Соловьёв</a>
+        <a href="evdokia_zavaliy.html" class="tab active">Евдокия Завалий</a>
+        <a href="zinaida_zhdanova.html" class="tab">Зинаида Жданова</a>
+    </div>
+</header>
+
+<main>
+    <section class="hero-detail">
+        <h2>Евдокия Завалий</h2>
+        <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/evdokia_zavaliy.jpg" alt="">
+                <img src="images/evdokia_zavaliy_1.jpg" alt="">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <p>Евдокия Завалия - еще один герой блокадного Ленинграда. Она пережила ужас голода и разрушений, но продолжала
+            бороться за выживание, а её действия стали символом детской стойкости.</p>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">Ранняя жизнь</h2>
+                <div class="accordion-content">
+                    <p>Евдокия родилась в 1933 году в Ленинграде. Она была маленькой девочкой, когда началась блокада,
+                        но несмотря на свой возраст, проявила невероятное мужество.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Деятельность во время блокады</h2>
+                <div class="accordion-content">
+                    <p>В условиях блокады Евдокия помогала собирать воду и раздавать продукты жителям города, а также
+                        поддерживала моральный дух людей, несмотря на собственные страдания.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Наследие</h2>
+                <div class="accordion-content">
+                    <p>Её действия были признаны на государственном уровне, и Евдокия была награждена посмертно за свою
+                        стойкость и преданность. Её имя стало синонимом мужества и храбрости среди детей блокадного
+                        Ленинграда.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Все права защищены.</p>
+</footer>
+<script src="accordion.js"></script>
+<script src="carousel.js"></script>
+</body>
+</html>

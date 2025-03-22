@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Настройки для body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Минимальная высота страницы на всю высоту экрана */
+}
+
+header {
+    background-color: #2d3e50;
+    padding: 10px;
+    color: white;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #3f4f5f;
+}
+
+/* Основной контейнер для контента */
+main {
+    padding: 20px;
+    max-width: 1100px;
+    /*margin: 0 auto;*/
+    flex-grow: 1; /* Это позволяет основному контенту занимать оставшееся пространство */
+
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #ececec;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+
+margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+.accordion-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.hero-detail img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для карусели */
+.carousel {
+    position: relative;
+    float: left; /* Карусель будет "плавать" слева */
+    width: 45%; /* Задаем ширину карусели */
+    margin-right: 20px; /* Отступ справа, чтобы текст не прижимался слишком близко */
+    margin-bottom: 20px; /* Добавляем отступ снизу, чтобы текст не пересекался */
+}
+
+
+.carousel-images {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-images img {
+    width: 100%;  /* Все картинки будут растягиваться на 100% ширины контейнера */
+    height: 650px;  /* Устанавливаем фиксированную высоту для всех картинок */
+    object-fit: cover;  /* Изображения будут обрезаться, чтобы сохранить пропорции */
+    display: none;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #1a202c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 100;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Стиль для футера */
+footer
+{
+    background-color: #2d3e50;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:50px;
+    margin-bottom:0px;
+}
+
+
+/* Стиль для бегущей строки */
+.image-marquee {
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.image-marquee-wrapper {
+    display: flex;
+    animation: marquee 20s linear infinite;
+}
+
+.image-marquee img {
+    width: 200px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Анимация для бегущей строки */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
