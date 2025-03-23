@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Hero Name - Дети-герои Ленинграда</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="index.html" class="tab">Главная</a>
+        <a href="galina_zybina.html" class="tab">Галина Зыбина</a>
+        <a href="misha_tikhomirov.html" class="tab">Миша Тихомиров</a>
+        <a href="tanya_savicheva.html" class="tab">Таня Савичева</a>
+        <a href="evdokia_zavaliy.html" class="tab">Евдокия Завалий</a>
+        <a href="lenya_golikov.html" class="tab active">Лёня Голиков</a>
+        <a href="uta_bondarovskaya.html" class="tab">Юта Бондаровская</a>
+        <a href="nina_kukoverova.html" class="tab">Нина Куковерова</a>
+    </div>
+</header>
+
+<main>
+    <section class="hero-detail">
+        <h2>Имя героя</h2>
+        <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/lenya_golikov.jpg" alt="">
+                <img src="images/lenya_golikov_1.jpg" alt="">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <p>Леонид Александрович Голиков (известный как Лёня Голиков) — пионер-герой, участник Великой Отечественной
+            войны, партизан, Герой Советского Союза (посмертно).</p>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">Ранняя жизнь</h2>
+                <div class="accordion-content">
+                    <p>Леонид Александрович Голиков родился 17 июня 1926 года в деревне Лукино Новгородской области в
+                        семье рабочих.С раннего детства Голиков был приучен к труду. Он носил из колодца воду, ухаживал
+                        за коровой и овцами, умел поправить забор и залатать дырявые валенки.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Деятельность во время блокады</h2>
+                <div class="accordion-content">
+                    <p>С марта 1942 года Голиков был разведчиком 67-го партизанского отряда 4-й Ленинградской
+                        партизанской бригады. Он проникал в фашистские гарнизоны, собирая данные о противнике.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Наследие</h2>
+                <div class="accordion-content">
+                    <p>2 апреля 1944 года Леониду Александровичу Голикову было присвоено звание Героя Советского Союза
+                        посмертно.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Все права защищены.</p>
+</footer>
+<script src="accordion.js"></script>
+<script src="carousel.js"></script>
+</body>
+</html>

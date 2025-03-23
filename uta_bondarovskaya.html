@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Hero Name - Дети-герои Ленинграда</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="index.html" class="tab">Главная</a>
+        <a href="galina_zybina.html" class="tab">Галина Зыбина</a>
+        <a href="misha_tikhomirov.html" class="tab">Миша Тихомиров</a>
+        <a href="tanya_savicheva.html" class="tab">Таня Савичева</a>
+        <a href="evdokia_zavaliy.html" class="tab">Евдокия Завалий</a>
+        <a href="lenya_golikov.html" class="tab">Лёня Голиков</a>
+        <a href="uta_bondarovskaya.html" class="tab active">Юта Бондаровская</a>
+        <a href="nina_kukoverova.html" class="tab">Нина Куковерова</a>
+    </div>
+</header>
+
+<main>
+    <section class="hero-detail">
+        <h2>Имя героя</h2>
+        <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/default_hero_name.jpg" alt="">
+                <img src="images/default_hero_name_1.jpg" alt="">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <p>Юта Бондаровская (Бондаровская Ия Сергеевна) — пионер-герой, партизанка 6-й Ленинградской партизанской
+            бригады.</p>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">Ранняя жизнь</h2>
+                <div class="accordion-content">
+                    <p>Юта Бондаровская (Бондаровская Ия В.) родилась 6 января 1928 года в деревне Залазы Ленинградской
+                        области. Училась в Петергофской школе №415. Летом 1941 года 13-летняя Юта отправилась на
+                        каникулы в деревню под Псковом, к сестре своей мамы. Там её настигла война. Вскоре по деревне
+                        поползли слухи о том, что Ленинград окружён немцами.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Деятельность во время блокады</h2>
+                <div class="accordion-content">
+                    <p>Юта мечтала пробраться в блокадный город и спасти свою мать. С каждым днём её цель становилась
+                        всё более отчётливой: подрывать немецкие посты, уничтожать врага, чтобы ни один фашист не
+                        подошёл к Ленинграду. Юта начала помогать партизанам. Сначала выполняла несложные поручения:
+                        передавала записки и послания в отряд, а затем стала разведчицей в 6-й Ленинградской
+                        партизанской бригаде.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">Наследие</h2>
+                <div class="accordion-content">
+                    <p>Посмертно награждена орденом Отечественной войны 1-й степени и медалью «Партизану Отечественной
+                        войны» 1-й степени.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Все права защищены.</p>
+</footer>
+<script src="accordion.js"></script>
+<script src="carousel.js"></script>
+</body>
+</html>
